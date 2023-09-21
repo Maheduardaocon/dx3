@@ -13,20 +13,20 @@ function Desafioum() {
 function Desafiodois() {
 
     const texto = document.querySelector("h1");
-    const a = parseInt(document.getElementById('a').value);
-    const b = parseInt(document.getElementById('b').value);
-    const c = parseInt(document.getElementById('c').value);
+    const a = parseInt(document.getElementById("a").value);
+    const b = parseInt(document.getElementById("b").value);
+    const c = parseInt(document.getElementById("c").value);
 
     if (a >= b && a <= c || a >= c && a <= b) {
         texto.innerHTML = "A pessoa que venceu teve " + a + " pontos";
     }
 
     else if (b >= a && b <= c || b >= c && b <= a) {
-        texto.innerHTML = "A pessoa que venceu foi " + b + " pontos";
+        texto.innerHTML = "A pessoa que venceu teve " + b + " pontos";
     }
 
     else if (c >= b && c <= a || c >= a && c <= b) {
-        texto.innerHTML = "A pessoa que venceu foi " + c + " pontos";
+        texto.innerHTML = "A pessoa que venceu teve " + c + " pontos";
     }
 }
 
